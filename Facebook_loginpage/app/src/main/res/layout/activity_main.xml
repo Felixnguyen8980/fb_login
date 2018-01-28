@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id ="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue"
+    tools:context="com.example.felix.facebook_loginpage.MainActivity">
+
+    <TextView
+        android:id="@+id/img_fb"
+        android:layout_marginLeft="@dimen/edit_margin_left"
+        android:layout_marginRight="@dimen/edit_margin_right"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="@dimen/edit_margin_bottom"
+        android:background="@drawable/image_facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_below="@+id/img_fb"
+        android:layout_marginLeft="@dimen/edit_margin_left"
+        android:layout_marginRight="@dimen/edit_margin_right"
+        android:layout_marginTop="@dimen/edit_margin_top"
+        android:layout_marginBottom="@dimen/edit_margin_bottom"
+        android:padding="@dimen/text_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/black"
+        android:background="@color/white"
+        android:hint="@string/hint_email_phone"
+         />
+
+    <EditText
+        android:id="@+id/edt_pass"
+        android:layout_below="@+id/edt_email"
+        android:layout_marginLeft="@dimen/edit_margin_left"
+        android:layout_marginRight="@dimen/edit_margin_right"
+        android:layout_marginTop="@dimen/edit_margin_top"
+        android:layout_marginBottom="@dimen/edit_margin_bottom"
+        android:padding="@dimen/text_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/black"
+        android:background="@color/white"
+        android:hint="@string/hint_pass"
+        />
+    
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_below="@+id/edt_pass"
+        android:layout_marginLeft="@dimen/edit_margin_left"
+        android:layout_marginRight="@dimen/edit_margin_right"
+        android:layout_marginTop="@dimen/edit_margin_top"
+        android:padding="@dimen/text_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        android:background="@color/blue_dark"
+        android:hint="@string/text_login"
+        android:textAllCaps="false"
+        android:textSize="@dimen/text_size_large"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginLeft="@dimen/edit_margin_left"
+        android:layout_marginRight="@dimen/edit_margin_right"
+        android:layout_marginTop="@dimen/edit_margin_top"
+        android:layout_marginBottom="@dimen/edit_margin_bottom"
+        android:gravity="center"
+        android:padding="@dimen/text_padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        android:background="@color/blue"
+        android:hint="Sign up for facebook"
+        />
+</RelativeLayout>
